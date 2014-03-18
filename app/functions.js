@@ -12,7 +12,11 @@ define(function() {
     },
 
     functionFunction : function(str) {
+        function retfunc (new_str){
+            return str +", " + new_str;
+        }
 
+        return retfunc;
     },
 
     makeClosures : function(arr, fn) {
