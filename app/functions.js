@@ -20,7 +20,11 @@ define(function() {
     },
 
     makeClosures : function(arr, fn) {
-
+        var new_arr = [];
+        for (var i = 0 ; i < arr.length ; i++){
+            new_arr.push(fn(arr[i]));
+        }
+        return new_arr;
     },
 
     partial : function(fn, str1, str2) {
